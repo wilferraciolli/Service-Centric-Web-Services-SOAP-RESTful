@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://wiltech/" xmlns:ns1="http://xml.netbeans.org/schema/FlightsInfo" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://wiltech/">
+
+<xs:import namespace="http://xml.netbeans.org/schema/FlightsInfo" schemaLocation="http://localhost:8080/FlightAgencyWSApp/FlightsWS?xsd=1"/>
+
+<xs:element name="bookTicket" type="tns:bookTicket"/>
+
+<xs:element name="bookTicketResponse" type="tns:bookTicketResponse"/>
+
+<xs:element name="fillFlights" type="tns:fillFlights"/>
+
+<xs:element name="fillFlightsResponse" type="tns:fillFlightsResponse"/>
+
+<xs:element name="getAirportAddress" type="tns:getAirportAddress"/>
+
+<xs:element name="getAirportAddressResponse" type="tns:getAirportAddressResponse"/>
+
+<xs:element name="getAvailableSeats" type="tns:getAvailableSeats"/>
+
+<xs:element name="getAvailableSeatsResponse" type="tns:getAvailableSeatsResponse"/>
+
+<xs:element name="getDestinationCity" type="tns:getDestinationCity"/>
+
+<xs:element name="getDestinationCityResponse" type="tns:getDestinationCityResponse"/>
+
+<xs:element name="getFlightByDate" type="tns:getFlightByDate"/>
+
+<xs:element name="getFlightByDateResponse" type="tns:getFlightByDateResponse"/>
+
+<xs:element name="getFlightIDs" type="tns:getFlightIDs"/>
+
+<xs:element name="getFlightIDsResponse" type="tns:getFlightIDsResponse"/>
+
+<xs:element name="getOriginCities" type="tns:getOriginCities"/>
+
+<xs:element name="getOriginCitiesResponse" type="tns:getOriginCitiesResponse"/>
+
+<xs:element name="searchJourney" type="tns:searchJourney"/>
+
+<xs:element name="searchJourneyResponse" type="tns:searchJourneyResponse"/>
+
+<xs:complexType name="getOriginCities">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getOriginCitiesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAvailableSeats">
+<xs:sequence>
+<xs:element name="flightID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAvailableSeatsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFlightIDs">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getFlightIDsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchJourney">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchJourneyResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:flight_type" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="fillFlights">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="fillFlightsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="bookTicket">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="bookTicketResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:flight_type" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDestinationCity">
+<xs:sequence>
+<xs:element name="originCity" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDestinationCityResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAirportAddress">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAirportAddressResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFlightByDate">
+<xs:sequence>
+<xs:element name="date" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFlightByDateResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:flight_type" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

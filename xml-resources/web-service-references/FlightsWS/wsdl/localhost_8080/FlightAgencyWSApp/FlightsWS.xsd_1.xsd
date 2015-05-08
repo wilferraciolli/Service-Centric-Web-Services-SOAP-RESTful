@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="1.0" targetNamespace="http://xml.netbeans.org/schema/FlightsInfo">
+
+<xs:complexType name="flight_type">
+<xs:sequence>
+<xs:element name="flightID" type="xs:int"/>
+<xs:element name="originCity" type="xs:string"/>
+<xs:element name="originAddress" type="xs:string"/>
+<xs:element name="destinationCity" type="xs:string"/>
+<xs:element name="destinationAddress" type="xs:string"/>
+<xs:element name="date" type="xs:string"/>
+<xs:element name="time" type="xs:string"/>
+<xs:element name="airline" type="xs:string"/>
+<xs:element name="availableSeats" type="xs:int"/>
+<xs:element name="connections" type="xs:int"/>
+<xs:element name="fare">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="currency" type="xs:string"/>
+<xs:element name="value" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
