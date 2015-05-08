@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<flightBooking xmlns="http://xml.netbeans.org/schema/FlightsInfo">
+    <flight_trips>
+        <flightID>1</flightID>
+        <originCity>London</originCity>
+        <originAddress>address 1</originAddress>
+        <destinationCity>Leeds</destinationCity>
+        <destinationAddress>address 2</destinationAddress>
+        <date>01/01/15</date>
+        <time>09:00</time>
+        <airline>Britsh Airways</airline>
+        <availableSeats>20</availableSeats>
+        <connections>1</connections>
+        <fare>
+            <currency>GBP</currency>
+            <value>100.0</value>
+        </fare>
+    </flight_trips>
+    <flight_trips>
+        <flightID>2</flightID>
+        <originCity>London</originCity>
+        <originAddress>address 1</originAddress>
+        <destinationCity>Leeds</destinationCity>
+        <destinationAddress>address 2</destinationAddress>
+        <date>01/01/15</date>
+        <time>10:00</time>
+        <airline>Ryanair</airline>
+        <availableSeats>20</availableSeats>
+        <connections>1</connections>
+        <fare>
+            <currency>GBP</currency>
+            <value>100.0</value>
+        </fare>
+    </flight_trips>
+    <flight_trips>
+        <flightID>3</flightID>
+        <originCity>London</originCity>
+        <originAddress>address 1</originAddress>
+        <destinationCity>Leeds</destinationCity>
+        <destinationAddress>address 2</destinationAddress>
+        <date>02/01/15</date>
+        <time>10:00</time>
+        <airline>Ryanair</airline>
+        <availableSeats>20</availableSeats>
+        <connections>1</connections>
+        <fare>
+            <currency>GBP</currency>
+            <value>100.0</value>
+        </fare>
+    </flight_trips>
+    <flight_trips>
+        <flightID>4</flightID>
+        <originCity>Birmingham</originCity>
+        <originAddress>address Origin</originAddress>
+        <destinationCity>Paris</destinationCity>
+        <destinationAddress>dest address</destinationAddress>
+        <date>02/01/15</date>
+        <time>10:00</time>
+        <airline>Alitalia</airline>
+        <availableSeats>50</availableSeats>
+        <connections>0</connections>
+        <fare>
+            <currency>EUR</currency>
+            <value>120.0</value>
+        </fare>
+    </flight_trips>
+    <flight_trips>
+        <flightID>5</flightID>
+        <originCity>Manchester</originCity>
+        <originAddress>ori addrss</originAddress>
+        <destinationCity>Belfast</destinationCity>
+        <destinationAddress>dest address</destinationAddress>
+        <date>03/01/15</date>
+        <time>09:00</time>
+        <airline>Air Cyprus</airline>
+        <availableSeats>60</availableSeats>
+        <connections>2</connections>
+        <fare>
+            <currency>EUR</currency>
+            <value>90.0</value>
+        </fare>
+    </flight_trips>
+    <flight_trips>
+        <flightID>6</flightID>
+        <originCity>East Midland</originCity>
+        <originAddress>ori addrss</originAddress>
+        <destinationCity>Amsterdam</destinationCity>
+        <date>04/01/15</date>
+        <time>09:00</time>
+        <airline>Holland Airways</airline>
+        <availableSeats>10</availableSeats>
+        <connections>0</connections>
+        <fare>
+            <currency>GBP</currency>
+            <value>160.0</value>
+        </fare>
+    </flight_trips>
+</flightBooking>

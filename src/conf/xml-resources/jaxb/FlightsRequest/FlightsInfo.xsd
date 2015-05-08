@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://xml.netbeans.org/schema/FlightsInfo"
+    xmlns:tns="http://xml.netbeans.org/schema/FlightsInfo"
+    elementFormDefault="qualified">  
+      
+    <xsd:complexType name="flight_type">
+        <xsd:sequence>
+            <xsd:element name="flightID" type="xsd:int"/>
+            <xsd:element name="originCity" type="xsd:string"/>
+            <xsd:element name="originAddress" type="xsd:string"/>
+            <xsd:element name="destinationCity" type="xsd:string"/>
+            <xsd:element name="destinationAddress" type="xsd:string"/>
+            <xsd:element name="date" type="xsd:string"/>
+            <xsd:element name="time" type="xsd:string"/>
+            <xsd:element name="airline" type="xsd:string"/>
+            <xsd:element name="availableSeats" type="xsd:int"/>
+            <xsd:element name="connections" type="xsd:int"/>
+            <xsd:element name="fare">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="currency" type="xsd:string"/>
+                        <xsd:element name="value" type="xsd:double"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:element name="flightBooking">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="flight_trips" type="tns:flight_type" maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>            
+    </xsd:element>
+    
+</xsd:schema>
