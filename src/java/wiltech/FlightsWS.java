@@ -34,7 +34,7 @@ import org.netbeans.xml.schema.flightsinfo.FlightType;
 @WebService(serviceName = "FlightsWS")
 public class FlightsWS {
 
-    //*************************** method to search bookings *********************
+    //*************************** method to search bookings **********************
     //GenerateFlights getAllFlights = new GenerateFlights();
     
     @WebMethod(operationName = "searchJourney")

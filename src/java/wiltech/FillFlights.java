@@ -19,7 +19,7 @@ public class FillFlights {
         // TODO code application logic here
         
         
-        //********************** fill in flight details *************************
+        //********************** fill in flight details **************************
         //declare XML root element
         FlightBooking myFlight = new FlightBooking();
         //get the list of flights
